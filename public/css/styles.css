@@ -168,7 +168,7 @@ nav ul li a.active::after {
 }
 
 .dark-mode .hamburger div {
-    background-color: var(--light);
+    background-color: var(--gray);
 }
 
 /* Hero Section */
