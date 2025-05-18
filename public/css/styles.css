@@ -424,7 +424,7 @@ nav ul li a.active::after {
 .dark-mode .contact-form textarea {
     background-color: var(--light-gray);
     border-color: var(--gray);
-    color: var(--light);
+    color: var(--gray);
 }
 
 .contact-form input:focus,
