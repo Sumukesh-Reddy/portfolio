@@ -519,7 +519,7 @@ footer {
     }
 
     .dark-mode nav ul {
-        background-color: var(--dark);
+        background-color: var(--light);
     }
 
     nav ul.active {
