@@ -28,19 +28,15 @@ Welcome to my professional portfolio repository! This project showcases my skill
 1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/sumukesh-portfolio.git
-   cd sumukesh-portfolio
-   Install dependencies
-bash
+      cd portfolio
+Install dependencies
 npm install
 Run the development server
-bash
 npm start
 Open in browser
-text
 http://localhost:3000
 📂 Project Structure
 
-text
 src/
 ├── components/       # Reusable components
 │   ├── Header/
@@ -64,3 +60,10 @@ Create a new branch (git checkout -b improve-feature)
 Commit your changes (git commit -m 'Add some feature')
 Push to the branch (git push origin improve-feature)
 Open a Pull Request
+📬 Contact Me
+
+Let's connect! I'm always open to discussions about opportunities or collaborations.
+
+✉️ Email: sumukeshreddy.m23@iiits.in
+💼 LinkedIn: Sumukesh Reddy
+🐱 GitHub: @sumukeshreddy
