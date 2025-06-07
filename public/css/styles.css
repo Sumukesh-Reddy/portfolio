@@ -605,7 +605,7 @@ footer {
     color: white;
 }
 .flip-card-back {
-    background-color: var(--light);
+    background: linear-gradient(140deg, var(--accent), var(--light-gray));
     color: var(--primary-dark);
     transform: rotateY(180deg);
     overflow-y: auto;

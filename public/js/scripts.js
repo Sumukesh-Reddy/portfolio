@@ -1,22 +1,21 @@
-// Theme Toggle
+
 const themeToggle = document.getElementById('themeToggle');
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
 const currentTheme = localStorage.getItem('theme') || 
                      (prefersDarkScheme.matches ? 'dark' : 'light');
 
-// Set initial theme and nav link colors
 if (currentTheme === 'dark') {
     document.body.classList.add('dark-mode');
     themeToggle.innerHTML = '<i class="fas fa-sun" style="color: white;"></i>';
     document.querySelectorAll('nav ul li a').forEach(item => {
-        item.style.color = 'white'; // Set nav link color for dark mode
+        item.style.color = 'white'; 
     });
 } else {
-    document.body.classList.remove('dark-mode'); // Ensure dark-mode is removed for light theme
+    document.body.classList.remove('dark-mode'); 
     themeToggle.innerHTML = '<i class="fas fa-moon" style="color: black;"></i>';
     document.querySelectorAll('nav ul li a').forEach(item => {
-        item.style.color = 'black'; // Set nav link color for light mode
+        item.style.color = 'black';
     });
 }
 
@@ -28,15 +27,15 @@ themeToggle.addEventListener('click', () => {
     if (theme === 'dark') {
         themeToggle.innerHTML = '<i class="fas fa-sun" style="color: white;"></i>';
         document.querySelectorAll('nav ul li a').forEach(item => {
-            item.style.color = 'white'; // Set color for nav links
+            item.style.color = 'white';
         });
     } else {
         themeToggle.innerHTML = '<i class="fas fa-moon" style="color: black;"></i>';
         document.querySelectorAll('nav ul li a').forEach(item => {
-            item.style.color = 'black'; // Set color for nav links
+            item.style.color = 'black'; 
         });
     }
-});// Mobile Menu Toggle
+});
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navbar').querySelector('ul');
 
@@ -45,7 +44,6 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Close mobile menu when clicking a nav link
 document.querySelectorAll('nav ul li a').forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -53,7 +51,6 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     });
 });
 
-// Active nav link highlighting
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav ul li a');
 
@@ -77,7 +74,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -95,7 +91,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
@@ -151,7 +146,6 @@ function showNotification(message, type) {
     }, 3000);
 }
 
-// Animation on scroll
 const animateOnScroll = () => {
     const elements = document.querySelectorAll('.hero-text, .hero-image, .about-content > *, .project-card, .skills-category');
     
@@ -166,7 +160,6 @@ const animateOnScroll = () => {
     });
 };
 
-// Set initial state for animated elements
 document.querySelectorAll('.hero-text, .hero-image, .about-content > *, .project-card, .skills-category').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
